@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block play_pc %}
+<section class="play-container">
+    <form action="/result-pc" method="POST">
+        <div class="player-one">
+            <div>
+                <h2><label for="player_1_name">Name:</label></h2>
+                <input type="text" name="player_1_name" id="player_1_name" required>
+            </div>
+            <div>
+                <h2><label for="player_1_choice">Please select Rock, Paper or Scissors From the Dropdown Menu:<br></label>
+                <select name="player_1_choice" id="player_1_choice" required>
+                    <option value="Rock">Rock</option>
+                    <option value="Paper">Paper</option>
+                    <option value="Scissors">Scissors</option>
+                </select>
+            </div>
+        </div>
+        <div class="play-pc-button">
+            <input type="submit" id="submit" value="PLAY!">
+        </div>
+    </form>
+</section>
+{% endblock play_pc %}

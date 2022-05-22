@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block result_pc %}
+<section class="result-container">
+    <div class="result-summary">
+        <h2>{{ player_1_name.upper() }} chose {{ player_1_choice }}</h2>
+        <h2>COMPUTER chose {{ computer_choice }}</h2>
+        <h2>so</h2>
+        <h1>{{ result_pc }}</h1>
+    </div>
+    <div class="result-buttons">
+        <form action="/play-pc" method="POST">
+            <div class="result-play-again-button">
+                <input type="submit" id="submit" value="Play again?">
+            </div>
+        </form>
+        <form action="/welcome" method="POST">
+        </form>
+    </div>
+</section>
+
+
+{% endblock result_pc %}

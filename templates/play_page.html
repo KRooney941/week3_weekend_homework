@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block play %}
+
+<section class="play-container">
+    <form action="/results" method="POST">
+        <div class="player-one">
+            <div>
+                <h3><label for="player_1_name">Name:</label></h3>
+                <input type="text" name="player_1_name" id="player_1_name" required>
+            </div>
+            <div>
+                <h3><label for="player_1_choice">Please select Rock, Paper or Scissors From the Dropdown Menu:<br></label></h3>
+                <select name="player_1_choice" id="player_1_choice" required>
+                    <option value="Rock">Rock</option>
+                    <option value="Paper">Paper</option>
+                    <option value="Scissors">Scissors</option>
+                </select>
+            </div>
+        </div>
+        <div class="player-two">
+            <div>
+                <h3><label for="player_two_name">Name:</label></h3>
+                <input type="text" id="player_two_name" name="player_two_name" required>
+            </div>
+            <div>
+                <h3><label for="player_two_choice">Please select Rock, Paper or Scissors From the Dropdown Menu:<br></label></h3>
+                <select name="player_two_choice" id="player_two_choice" required>
+                    <option value="Rock">Rock</option>
+                    <option value="Paper">Paper</option>
+                    <option value="Scissors">Scissors</option>
+                </select>
+            </div>
+        </div>
+        <div class="play-button">
+            <input type="submit" id="submit" value="PLAY!">
+        </div>
+    </form>
+
+</section>
+{% endblock play %}

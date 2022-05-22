@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='{{ url_for('static', filename='css/main.css') }}'>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+          <nav>
+            <ul>
+              <li class="navLink"><a href="/">Home &#127968</a></li>
+            </ul>
+          </nav>
+        <h1>Rock 🪨 Paper 📰 Scissors ✂️ </h1>
+        
+    </header>
+    
+    {% block welcome %}{% endblock welcome %}
+    
+    {% block play %}{% endblock play %}
+
+    {% block play_pc %}{% endblock play_pc %}
+
+    {% block result %}{% endblock result %}
+
+    {% block result_pc %}{% endblock result_pc %}
+
+    <footer>
+        <h5 class="footer-logo">Made by Kieran @<p><a href="https://codeclan.com/">codeclan.com</a></p></h5>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+body {
+	height: 100vh;
+	max-height: 100vh;
+	width: 100vw;
+	margin: 0;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+header {
+	display: flex;
+	height: 20%;
+	max-height: 200px;
+	align-items: center;
+	justify-content: center;
+	font-family: "Major Mono Display", monospace;
+    background-color: lightblue;
+}
+
+.navLink {
+    list-style: none;
+    position: absolute;
+    left: 10px;
+    top: 65px;
+}
+
+.ready {
+	text-align: center;
+	padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+	font-size: 30px;
+}
+
+.ready-to-play-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.play-a-friend-button,
+.play-pc-button {
+	text-align: center;
+	padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.rules {
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.rules > ul {
+        display: inline-block;
+        text-align: left;
+        padding-right: 25px;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;   
+    background-color: lightblue;
+ }
+
+.footer-logo {
+	display: flex;
+	position: absolute;
+	align-items: center;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+.play-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    
+}
+
+.player-one {
+	padding: 5% 0 3% 0;
+}
+
+.player-two {
+	padding: 0 0 3% 0;
+}
+
+
+.play-button > input {
+    background-color: rgb(107, 201, 232);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    border-radius:10px;
+    padding-bottom: 20px;
+  }
+  
+.play-button> input:hover {opacity: 1}
+
+.result-container {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+}
+
+.result-play-again-button > input {
+    background-color: rgb(107, 201, 232);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    border-radius:10px;
+}
+
+.results-play-again-button> input:hover {opacity: 1}
+
+.play-pc-button > input {
+    background-color: rgb(107, 201, 232);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    border-radius:10px;
+
+}
+
+.play-pc-button > input:hover {opacity: 1}
+
+.result-play-again-button > input:hover {opacity: 1}
+
+.play-a-friend-button > input {
+    background-color: rgb(107, 201, 232);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    border-radius:10px;
+}
+
+.play-a-friend-button > input:hover {opacity: 1}
+
+body > header > nav > ul > li {
+    padding-left: 10px;
+}
+
+
+.result-container {
+    padding-top: 70px;
+}
+
+.player-one {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

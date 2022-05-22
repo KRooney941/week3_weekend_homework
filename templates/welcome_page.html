@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block welcome %}
+<section class="welcome-container">
+  <div class="ready">
+    <h1>Ready to Play?!</h1>
+  </div>
+  <div class='ready-to-play-buttons'>
+    <form action="/play" method="POST">
+        <div class="play-a-friend-button">
+            <input type="submit" id="submit" value="PLAY A FRIEND">
+        </div>
+    </form>
+    <form action="/play-pc" method="POST">
+        <div class="play-pc-button">
+            <input type="submit" id="submit" value="PLAY THE COMPUTER">
+        </div>
+    </form>
+  </div>
+  <div class="rules">
+      <h2>The Rules Are Simple:</h2>
+        <ul>
+            <li>Rock beats scissors</li>
+            <li>Paper beats rock</li>
+            <li>Scissors beats paper</li>
+            <li><b>And have fun!</b></li>
+        </ul>
+    </div>
+  
+</section>
+{% endblock welcome %}
